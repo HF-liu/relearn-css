@@ -1,0 +1,17 @@
+.contentContainer {
+  width: 700px;
+  margin: 0px auto;
+  text-align: center;
+}
+.paragraph, .dayList {
+  text-align: left;
+  font-family: "Helvetica";
+  line-height: 1.5;
+}
+.dayList {
+  list-style-type: none;
+  padding-left: 0px;
+}
+h1 {
+  font-family: "Impact";
+}
