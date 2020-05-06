@@ -11,13 +11,6 @@
   float:left;
 }
 
-.noteContainer {
-  clear:both;
-}
-.noteList {
-  list-style-type: none;
-}
-
 .iconBar2  i {
   width: 25px;
   font-size: 25px;

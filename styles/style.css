@@ -24,3 +24,10 @@ h1 {
 .home:visited {
   color: #484848;
 }
+
+.noteContainer {
+  clear:both;
+}
+.noteList {
+  list-style-type: none;
+}
