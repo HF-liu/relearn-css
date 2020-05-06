@@ -15,3 +15,12 @@
 h1 {
   font-family: "Impact";
 }
+
+.home {
+  text-decoration: none;
+  color: #484848;
+}
+
+.home:visited {
+  color: #484848;
+}

@@ -1,0 +1,110 @@
+.solutions {
+  margin-bottom: 20px;
+  clear:both;
+}
+
+.iconBar1 i {
+  font-size: 25px;
+  color:white;
+  padding: 25px;
+  background-color: #202020;
+  float:left;
+}
+
+.noteContainer {
+  clear:both;
+}
+.noteList {
+  list-style-type: none;
+}
+
+.iconBar2  i {
+  width: 25px;
+  font-size: 25px;
+  color:white;
+  padding: 25px;
+  background-color: #202020;
+  clear:both;
+  float:left;
+}
+
+.iconBar2 > i:first-of-type {
+  font-size: 25px;
+  color:white;
+  padding: 25px;
+  background-color: #202020;
+  float:left;
+}
+
+.iconBar3 {
+  display: flex;
+  justify-content: left;
+}
+
+.iconBar3 i {
+  width: 25px;
+  font-size: 25px;
+  color:white;
+  background-color: #202020;
+  padding: 25px;
+}
+
+.iconBar4 {
+  display: flex;
+  flex-direction:column
+}
+
+.iconBar4 i {
+  width: 25px;
+  font-size: 25px;
+  color:white;
+  background-color: #202020;
+  padding: 25px;
+}
+
+.selected  i {
+  background-color: #003366;
+}
+
+i:hover {
+  background-color: #404040;
+}
+
+
+.iconBar5 {
+  /* width: 150px; */
+  width: 100%;
+  background-color: #555;
+  overflow:auto;
+}
+
+.iconBar5 a {
+  float: left;
+  text-align: center;
+  width: 20%;
+  font-size: 36px;
+  padding: 12px 0;
+  color: white;
+}
+
+.iconBar6 {
+  width: 90px;
+  background-color: #555;
+}
+
+.iconBar6 a {
+  display: block;
+  padding: 22px;
+  color: white;
+  font-size: 36px;
+}
+
+
+.iconBar5 a:hover, .iconBar6 a:hover {
+  background-color: #000; /* Add a hover color */
+}
+
+.active {
+  background-color: #4CAF50; /* Add an active/current color */
+}
+
