@@ -1,0 +1,139 @@
+.mySol {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  margin: auto;
+}
+
+.mainButton {
+  position: absolute;
+  background-color: #49494944;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top, .bottom, .left, .right {
+  transition: all 0.4s;
+}
+
+.top {
+  position: absolute;
+  width: 200px;
+  height:10px;
+  background-color: rgba(255, 0, 0, 0.212);
+  top: -2px;
+  opacity: 0;
+}
+
+.top:hover {
+  opacity: 1;
+  top: 0;
+  height:50px;
+  z-index: 9999;
+}
+
+.bottom {
+  position: absolute;
+  width: 200px;
+  height:10px;
+  background-color:rgba(255, 255, 0, 0.445);
+  bottom: -2px;
+  opacity: 0;
+}
+
+.bottom:hover {
+  opacity: 1;
+  bottom: 0;
+  height:50px;
+  z-index: 9999;
+}
+
+.left {
+  position: absolute;
+  width: 10px;
+  height:50px;
+  background-color:rgba(0, 0, 255, 0.479);
+  left: -2px;
+  opacity: 0;
+}
+
+.left:hover {
+  opacity: 1;
+  left: 0;
+  width:200px;
+  z-index: 9999;
+}
+
+.right {
+  position: absolute;
+  width: 10px;
+  height:50px;
+  background-color:rgba(0, 128, 0, 0.445);
+  right: -2px;
+  opacity: 0;
+}
+
+.right:hover {
+  opacity: 1;
+  right: 0;
+  width:200px;
+  z-index: 9999;
+}
+
+
+.block {
+  position: relative;
+  display: inline-block;
+  overflow:hidden;
+  width: 10em;
+  height: 10em;
+  vertical-align: middle;
+  transform: translateZ(0);
+}
+.block_hoverer {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all .3s ease;
+}
+
+.block_hoverer:nth-child(1) {
+  background: red;
+  top: -90%;
+}
+
+.block_hoverer:nth-child(2) {
+  background: lime;
+  top: 90%;
+}
+
+.block_hoverer:nth-child(3) {
+  background: orange;
+  left: -90%;
+}
+
+.block_hoverer:nth-child(4) {
+  background: blue;
+  left: 90%;
+}
+.block_hoverer:hover {
+  opacity: 1;
+  top: 0;
+  left: 0;
+}
+
+.block_content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 10em;
+  background: #333;
+  color: #FFF;
+}
