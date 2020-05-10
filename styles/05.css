@@ -1,0 +1,59 @@
+.toolTipContainer {
+  display: inline-flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.qIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(238, 238, 238);
+  border: solid 1px rgba(128, 128, 128, 0.178);
+  border-radius: 50%;
+  text-align: center;
+  margin: 0 2px;
+  cursor: pointer;
+}
+
+.qIcon:hover .toolTip, .qIcon:hover .arrow {
+  opacity: 1;
+}
+
+.toolTip {
+  opacity: 0;
+  text-align: left;
+  width: 260px;
+  background-color: white;
+  padding: 15px;
+  font-size: 12px;
+  line-height: 1.5;
+  margin-top: -10px;
+  border: solid 1px rgb(214, 214, 214);
+  box-shadow: 2px 4px 10px 0px rgba(131, 131, 131, 0.2);
+}
+
+.arrow {
+  opacity: 0;
+  margin-top: 5px;
+  border-top: solid 1px rgb(214, 214, 214);
+  border-bottom: 0px;
+  border-left: solid 1px rgb(214, 214, 214);
+  border-right: 0px;
+
+  min-width: 18px;
+  min-height: 18px;
+  transform: rotate(45deg);
+  background-color: white;
+}
+
+/* .triangle {
+  width: 0; 
+  height: 0; 
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid rgb(214, 214, 214);
+} */
+
