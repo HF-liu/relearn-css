@@ -18,7 +18,12 @@
   cursor: pointer;
 }
 
-.qIcon:hover .toolTip, .qIcon:hover .arrow {
+.qMark {
+  width: 100%;
+  height: 100%;
+}
+
+.qMark:hover~.toolTip, .qMark:hover~.arrow {
   opacity: 1;
 }
 
