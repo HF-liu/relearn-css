@@ -1,0 +1,80 @@
+.contentContainer {
+  width: 800px;
+}
+
+.carouselContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.picContainer {
+  position: relative;
+  width: 800px;
+  height: 300px;
+}
+
+.navNum {
+  position: absolute;
+  height: 20px;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+}
+
+img.cPic {
+  display: none;
+}
+
+img.cPic.current {
+  display: block;
+}
+
+.nav {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: rgba(56, 56, 56, 0.212);
+  color: white;
+  font-weight: bold;
+}
+
+.nav:hover {
+  background-color: rgba(19, 18, 18, 0.418);
+}
+
+.navLeft {
+  top: 130px;
+  left: 30px;
+}
+
+.navRight {
+  top: 130px;
+  left: 730px;
+}
+
+.navDots {
+  display: flex;
+  height: 20px;
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+.navDot {
+  background-color: #cccccc;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.navDot.current {
+  background-color: #555555;
+}
