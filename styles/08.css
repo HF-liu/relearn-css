@@ -1,0 +1,79 @@
+.accordionContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.singleAcc {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  cursor: pointer;
+}
+
+.topBanner {
+  color: white;
+  height: 50px;
+  background-color: #242424;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none;
+}
+
+.expandContent {
+  display: flex;
+  height: 0px;
+  /* color: transparent; */
+  overflow: hidden;
+  padding: 0 5px;
+  justify-content: center;
+  align-items: center;
+  background-color: #c7c7c7;
+  transition: all 0.2s ease;
+}
+
+.singleAcc:hover .topBanner {
+  background-color: #313131;
+}
+
+.singleAcc.on .expandContent {
+  height: 50px;
+  /* color: black; */
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
