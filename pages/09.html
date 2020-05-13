@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>reLearn CSS - HF Liu</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/09.css">
+  </head>
+  <body>
+    <div class="contentContainer">
+      <h1><a class="home" href="../index.html">reLearn CSS</a> - 100 Day Challenge(9/100)</h1>
+      <h4>My Solution</h4>
+      <div class="tabContainer horizontal">
+        <label class="tab">
+          <input type="radio" name="tab" id="tab1">
+          <span class="tabText">Tab1</span>
+        </label>
+        <label class="tab">
+          <input type="radio" name="tab" id="tab2" checked>
+          <span class="tabText">Tab2</span>
+        </label>
+        <label class="tab">
+          <input type="radio" name="tab" id="tab3">
+          <span class="tabText">Tab3</span>
+        </label>
+      </div>
+
+      <div class="tabContainer vertical">
+        <label class="tab">
+          <input type="radio" name="tabv" id="tab1v" checked>
+          <span class="tabText">Tab1</span>
+        </label>
+        <label class="tab">
+          <input type="radio" name="tabv" id="tab2v">
+          <span class="tabText">Tab2</span>
+        </label>
+        <label class="tab">
+          <input type="radio" name="tabv" id="tab3v">
+          <span class="tabText">Tab3</span>
+        </label>
+      </div>
+
+      <a href="https://www.w3schools.com/howto/howto_js_tabs.asp" target="_blank">
+        <h4 style="margin-top: 40px;">W3School Solutions</h4>
+      </a>
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+      </div>
+
+      <div id="London" class="tabcontent">
+        <h3>London</h3>
+        <p>London is the capital city of England.</p>
+      </div>
+      
+      <div id="Paris" class="tabcontent">
+        <h3>Paris</h3>
+        <p>Paris is the capital of France.</p>
+      </div>
+      
+      <div id="Tokyo" class="tabcontent">
+        <h3>Tokyo</h3>
+        <p>Tokyo is the capital of Japan.</p>
+      </div>
+      <div class="noteContainer">
+        <h2>Notes</h2>
+        <ul class="noteList">
+          <li>
+            There's <strong>NO</strong> parent/previous sibling selector in CSS.
+          </li>
+          <li>
+            I prefer my solution using radio button to make sure the binary status of tabs.
+            <span>Inspired</span> by using checkbox for toggle switch <a href="06.html" target="_blank">(Day6)</a>.
+          </li>
+        </ul>
+      </div>
+    </div>
+  <script src="../scripts/09.js"></script>
+  </body>
+</html>

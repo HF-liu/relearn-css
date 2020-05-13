@@ -38,6 +38,7 @@
   margin-top: -10px;
   border: solid 1px rgb(214, 214, 214);
   box-shadow: 2px 4px 10px 0px rgba(131, 131, 131, 0.2);
+  cursor: default;
 }
 
 .arrow {
