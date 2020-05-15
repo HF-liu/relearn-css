@@ -1,0 +1,23 @@
+{
+  "name": "relearncss",
+  "version": "1.0.0",
+  "description": "My journals of relearning CSS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HF-liu/relearn-css.git"
+  },
+  "author": "HF Liu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HF-liu/relearn-css/issues"
+  },
+  "homepage": "https://github.com/HF-liu/relearn-css#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  }
+}

@@ -1,0 +1,15 @@
+.navContainer {
+  height: 40px;
+  display: flex;
+  justify-content: space-between; }
+  .navContainer .nav {
+    flex-grow: 1;
+    color: white;
+    text-align: center;
+    background-color: #373737;
+    line-height: 40px;
+    cursor: pointer; }
+    .navContainer .nav.active {
+      background-color: #4CAF50; }
+    .navContainer .nav:hover {
+      background-color: #ddd; }
