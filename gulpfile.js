@@ -8,3 +8,7 @@ gulp.task('sass', async function(done) {
   .pipe(gulp.dest('styles'))
   .on('end', done)
 })
+
+gulp.task('sass:watch', () => {
+  gulp.watch('sass/*.scss', gulp.series('sass'));
+});
