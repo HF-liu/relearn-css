@@ -1,0 +1,25 @@
+.parallax {
+  &.p1 {
+    background-image: url('https://placedog.net/800/800');
+  }
+  &.p2 {
+    background-image: url('https://placedog.net/850/850');
+  }
+  background-attachment: fixed;
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.textContent {
+  height: 300px;
+  color: white;
+  text-align: center;
+  line-height: 300px;
+  background-color: rgb(32, 107, 177);
+}
+
+.contentContainer {
+  height: 100vh;
+}
