@@ -1,0 +1,17 @@
+.contentContainer {
+  max-height: 100vh;
+  overflow: scroll; }
+
+#progressBar {
+  width: 100vw;
+  height: 3px;
+  background-color: #d4d4d4;
+  position: fixed; }
+  #progressBar .progress {
+    position: absolute;
+    width: 0vw;
+    height: 3px;
+    background-color: rgba(3, 102, 141, 0.637); }
+
+body {
+  margin: 0; }
