@@ -1,0 +1,21 @@
+.sidebar {
+  position: fixed;
+  width: 100px;
+  top: 100px;
+  left: calc(30vw - 100px);
+  background-color: rgb(230, 230, 230);
+  .options {
+    margin: 20px auto;
+    a {
+      color: rgb(68, 171, 255);
+      font-weight: bolder;
+      padding: 10px;
+      text-decoration: none;
+      display: block;
+    }
+  }
+}
+
+.contentContainer {
+  margin: 0 30vw;
+}
