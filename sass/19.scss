@@ -1,0 +1,21 @@
+.container {
+  height: 200px;
+  width: 200px;
+  background-color: yellowgreen;
+  line-height: 200px;
+  margin: auto;
+  border: 15px solid rgba(245, 245, 245, 0.363);
+  background-clip: padding-box;
+}
+
+.contentContainer {
+  background-image: url('https://placedog.net/700/700');
+  padding: 10px;
+  .noteContainer {
+    background:white;
+    width: 80%;
+    margin: auto;
+    border: 10px solid rgba(88, 166, 255, 0.356);
+    background-clip: padding-box;
+  }
+}
