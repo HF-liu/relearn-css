@@ -1,0 +1,19 @@
+.target {
+  height: 500px;
+  width: 500px;
+  background-image: url('https://placedog.net/500/500');
+  margin: auto;
+  box-shadow: 0 0 0 5px rgb(52, 139, 1),
+              0 0 0 10px rgb(190, 205, 50),
+              0 0 0 15px #bbff3b52;
+}
+
+.target2 {
+  height: 500px;
+  width: 500px;
+  background-image: url('https://placedog.net/500/500');
+  margin: auto;
+  border: 30px solid grey;
+  outline: 3px dotted white;
+  outline-offset: -15px;
+}
