@@ -1,0 +1,13 @@
+.contentContainer {
+  background: linear-gradient(#fb3 50%, #58a 50%);
+  background-size: 100% 30px;
+  padding-bottom: 20px; }
+  .contentContainer .inner {
+    padding: 20px;
+    margin: 0 20px;
+    background-color: rgba(255, 255, 255, 0.76);
+    border-radius: 20px; }
+  .contentContainer .noteContainer {
+    background-color: rgba(255, 255, 255, 0.76);
+    border-radius: 20px;
+    margin: 20px; }
