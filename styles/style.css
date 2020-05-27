@@ -36,3 +36,14 @@ h1 {
 .dayList a:visited {
   color: #484848;
 }
+
+.dayList li {
+  display: block;
+  line-height: 25px;
+}
+
+.doubanIcon {
+  width: 20px;
+  margin: 0 2px;
+  vertical-align: middle;
+}
