@@ -50,6 +50,7 @@ a:visited {
   .navblack .toprightnav {
     margin-left: auto; }
   .navblack .downloadPopup {
+    z-index: 1;
     display: none;
     width: 240px;
     background-color: #fff;
@@ -83,6 +84,7 @@ a:visited {
       .navblack .downloadPopup .downloadLink span {
         color: black; }
   .navblack .acDropdown {
+    z-index: 1;
     display: none;
     width: 90px;
     background: #fff;
@@ -105,3 +107,68 @@ a:visited {
       text-align: center; }
       .navblack .acDropdown a:hover {
         background-color: #f3f3f3; }
+
+.navGreen {
+  width: 100%;
+  min-width: 1040px;
+  margin-bottom: 50px;
+  background-color: #edf4ed;
+  padding: 10px 0; }
+  .navGreen .navGreenContainer {
+    padding-top: 10px 0 5px;
+    width: 1040px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center; }
+    .navGreen .navGreenContainer .navGreenLeft {
+      display: flex;
+      align-items: center;
+      margin: 10px 0; }
+      .navGreen .navGreenContainer .navGreenLeft .logoContainer {
+        margin-left: 0; }
+      .navGreen .navGreenContainer .navGreenLeft img {
+        width: 150px;
+        margin-right: 15px; }
+      .navGreen .navGreenContainer .navGreenLeft a {
+        font-size: 16px;
+        color: #072;
+        display: block;
+        text-decoration: none;
+        margin: 0 10px;
+        position: relative; }
+        .navGreen .navGreenContainer .navGreenLeft a:visited {
+          color: #072; }
+        .navGreen .navGreenContainer .navGreenLeft a:hover:not(.logoContainer) {
+          color: white;
+          background-color: #072; }
+        .navGreen .navGreenContainer .navGreenLeft a .upperIcon {
+          position: absolute;
+          bottom: 20px;
+          left: calc(95%);
+          background-color: #fe8167;
+          text-align: center;
+          color: white;
+          font-size: 9px;
+          line-height: 7px;
+          width: 17px; }
+    .navGreen .navGreenContainer .navGreenRight {
+      margin-left: auto;
+      position: relative; }
+      .navGreen .navGreenContainer .navGreenRight i {
+        padding: 9px;
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        color: #ccc;
+        font-size: 13px; }
+        .navGreen .navGreenContainer .navGreenRight i:hover {
+          cursor: pointer; }
+      .navGreen .navGreenContainer .navGreenRight input {
+        outline: none;
+        width: 278px;
+        height: 28px;
+        font-size: 13px;
+        border: 1px solid #e1e9e1;
+        padding-left: 10px; }
+        .navGreen .navGreenContainer .navGreenRight input::placeholder {
+          color: #cccccc; }
