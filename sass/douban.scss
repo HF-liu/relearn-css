@@ -211,6 +211,47 @@ a:visited {
       }
     }
   }
-  
+}
+
+.mainPage {
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  width: 1040px;
+  margin: auto;
+  .content {
+    height: 100%;
+    width: 675px;
+  }
+  .side {
+    height: 100%;
+    width: 300px;
+    .trending {
+      background-color: #f2f7f6;
+      font-size: 16px;
+      padding: 16px;
+      padding-bottom: 7px;
+      .trendingTitle {
+        color: #072;
+      }
+      .trendingList {
+        padding: 0;
+        margin-bottom: 10px;
+        li {
+          margin-top: 8px;
+          font-size: 14px;
+          list-style: none;
+          a {
+            text-decoration: none;
+            color:#37a;
+            &:hover {
+              color: white;
+              background-color: #37a;
+            }
+          }
+        }
+      }
+    };
+  }
 }
 

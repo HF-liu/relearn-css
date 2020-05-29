@@ -172,3 +172,36 @@ a:visited {
         padding-left: 10px; }
         .navGreen .navGreenContainer .navGreenRight input::placeholder {
           color: #cccccc; }
+
+.mainPage {
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  width: 1040px;
+  margin: auto; }
+  .mainPage .content {
+    height: 100%;
+    width: 675px; }
+  .mainPage .side {
+    height: 100%;
+    width: 300px; }
+    .mainPage .side .trending {
+      background-color: #f2f7f6;
+      font-size: 16px;
+      padding: 16px;
+      padding-bottom: 7px; }
+      .mainPage .side .trending .trendingTitle {
+        color: #072; }
+      .mainPage .side .trending .trendingList {
+        padding: 0;
+        margin-bottom: 10px; }
+        .mainPage .side .trending .trendingList li {
+          margin-top: 8px;
+          font-size: 14px;
+          list-style: none; }
+          .mainPage .side .trending .trendingList li a {
+            text-decoration: none;
+            color: #37a; }
+            .mainPage .side .trending .trendingList li a:hover {
+              color: white;
+              background-color: #37a; }
