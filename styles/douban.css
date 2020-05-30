@@ -202,6 +202,27 @@ a:visited {
           .mainPage .side .trending .trendingList li a {
             text-decoration: none;
             color: #37a; }
+            .mainPage .side .trending .trendingList li a:visited {
+              color: #37a; }
             .mainPage .side .trending .trendingList li a:hover {
               color: white;
               background-color: #37a; }
+
+footer {
+  width: 1040px;
+  border-top: 1px dashed #ddd;
+  color: #999;
+  font: 13px Helvetica,Arial,sans-serif;
+  padding-top: 6px;
+  display: flex;
+  justify-content: space-between;
+  margin: 40px auto 20px;
+  line-height: 1.62; }
+  footer a {
+    text-decoration: none;
+    color: #37a; }
+    footer a:visited {
+      color: #37a; }
+    footer a:hover {
+      color: white;
+      background-color: #37a; }
