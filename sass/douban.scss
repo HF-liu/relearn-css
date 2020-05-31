@@ -258,7 +258,42 @@ a:visited {
   }
 }
 
-
+.content {
+  .pagination {
+    font-size: 15px;
+    padding: 0;
+    text-align: center;
+    line-height: 1.5;
+    a {
+      &:visited {
+        color: #669;
+      }
+      &.dis {
+        color: grey;
+        cursor: auto;
+      }
+      text-decoration: none;
+    }
+    .prePage {
+      margin-right: 20px;
+      font: 14px Arial, Helvetica, sans-serif;
+    }
+    .nextPage {
+      margin-left: 20px;
+      font: 14px Arial, Helvetica, sans-serif;
+    }
+    .pageNum {
+      padding: 0px 4px;
+      margin: 2px;
+      font-size: 15px;
+      line-height: 1.5;
+      &.cur {
+        background-color: #83BF73;
+        color: white;
+      }
+    }
+  }
+}
 
 footer {
   width: 1040px;
