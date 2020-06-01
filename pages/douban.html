@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Fornever's Douban Mockup</title>
     <link rel="stylesheet" href="../styles/douban.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
   </header>
   <body>
     <div class="navblack">
@@ -61,6 +61,47 @@
     </div>
     <div class="mainPage">
       <div class="content">
+        <div class="inputContainer">
+          <div class="inputNav">
+            <div class="inputLeftNav">
+              <a href="" class="inputComment cur active"><i class="fas fa-comment-alt"></i>说句话</a>
+              <a href="" class="inputPic active"><i class="fas fa-images"></i>发照片</a>
+              <a href="" class="inputLink"><i class="fas fa-link"></i>推荐网页</a>
+              <a href="" class="inputDiary"><i class="fas fa-book"></i>写日记</a>
+            </div>
+            <div class="inputRightNav">
+              <a href=""><i class="fas fa-cog"></i>首页设置</a>
+            </div>
+          </div>
+          <div class="inputField active comment">
+            <div class="toggleInput">
+              <label id="inputLabel" for="inputText">分享生活点滴...</label>
+              <textarea name="comment" id="inputText" rows="1"></textarea>
+              <div class="commentIcons">
+                <a href=""><i class="commentIcon fas fa-camera"></i><span>照片</span></a>
+                <a href=""><i class="commentIcon fas fa-hashtag"></i><span> 话题</span></a>
+              </div>
+              <div class="picTopic">
+                <a href=""># 话题</a>
+              </div>
+              <div class="uploadField">
+                <div class="uploadInner">
+                  <div class="dragTip"><i class="fas fa-mouse-pointer"></i>拖图到框里上传</div>
+                  <i class="uploadIcon fas fa-images"><div class="uploadTitle">上传图片</div><div class="uploadDes">按住command键可最多选中9张</div></i>
+                </div>
+              </div>
+            </div>
+            <div class="inputBottomBar">
+              <div class="inputBLeft">
+                <a href="">添加网页推荐工具</a>
+              </div>
+              <div class="inputBRight">
+                <a href="">隐私和权限设置</a>
+                <button disabled>发布</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="pagination">
           <a href="" class="prePage dis">&lt;前页</a>
           <a href="" class="pageNum cur">1</a>

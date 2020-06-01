@@ -259,6 +259,246 @@ a:visited {
 }
 
 .content {
+  .inputContainer {
+    .inputNav {
+      height: 30px;
+      display: flex;
+      align-items: center;
+      padding: 0 2px;
+      .inputLeftNav {
+        a {
+          font-size: 14px;
+          text-decoration: none;
+          margin-right: 18px;
+          position: relative;
+          &:visited {
+            color: #37a;
+          }
+          &:link {
+            color: #37a;
+          }
+          &.cur {
+            color: black;
+            cursor: default;
+          }
+          &.active {
+            color: black;
+            cursor: default;
+            i::after {
+              content: "";
+              position: absolute;
+              bottom: -11px;
+              left: 30px;
+              height: 7px;
+              width: 7px;
+              border: 1px solid #ccc;
+              border-width: 1px 1px 0 0;
+              background: #fff;
+              transform: rotate(-45deg);
+              z-index: 1;
+            }
+          }
+          &:hover:not(.cur){
+            background-color: #37a;
+            color: white;
+            i {
+              color: #8f9197;
+              background-color: white;
+            }
+          }
+          i {
+            padding: 1px 5px 1px 0;
+            color: #8f9197;
+          }
+        }
+      }
+      .inputRightNav {
+        margin-left: auto;
+        a {
+          font-size: 13px;
+          text-decoration: none;
+          color: #ccc;
+        }
+      }
+    }
+    .inputField {
+      &.inactive {
+        .toggleInput {
+          .commentIcons {
+            display: block;
+            position: absolute;
+            top: 8px;
+            right: 15px;
+            i {
+              padding-left: 5px;
+              color: #8f9197;
+            }
+            span {
+              display: none;
+            }
+          }
+        }
+      }
+      &.comment.active {
+          .toggleInput {
+            .commentIcons {
+              display: block;
+              position: absolute;
+              bottom:5px;
+              left: 5px;
+              a {
+                color: #8f9197;
+                font-size: 13px;
+                text-decoration: none;
+              }
+              i {
+                color: #8f9197;
+                padding-left: 5px;
+              }
+              span {
+                padding-left: 5px;
+                display: auto;
+              }
+            }
+          }
+      }
+      &.pic {
+        .toggleInput {
+          height: auto;
+          label {
+            display: none;
+          }
+          textarea {
+            height: 90px;
+          }
+          .picTopic {
+            display: block;
+            position: absolute;
+            background-color: #dedbdb;
+            border-radius: 4px;
+            padding: 2px 9px;
+            font-size: 13px;
+            line-height: 1.62;
+            top: 75px;
+            right: 10px;
+            a {
+              text-decoration: none;
+              color: white;
+            }
+          }
+          .uploadField {
+            display: block;
+            border-top: 1px solid #d7d7d7;
+            padding: 10px 0;
+            .uploadInner {
+              color: #cdcdcd;
+              font-size: 13px;
+              border: 3px dashed #eee;
+              margin: auto;
+              width: 650px;
+              height: 90px;
+              background-color: #fafafa;
+              position: relative;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              .dragTip {
+                position: absolute;
+                top: 3px;
+                left: 3px;
+              }
+              .uploadIcon {
+                padding-top: 15px;
+                text-align: center;
+                color: #aaa;
+                font-size: 28px;
+                .uploadTitle {
+                  font-size: 14px;
+                }
+                .uploadDes {
+                  font: 13px Helvetica,Arial,sans-serif;
+                }
+              }
+              &:hover {
+                background-color: #f2f2f2;
+              }
+            }
+          }
+        }
+      }
+      .toggleInput {
+        border: 1px solid #d7d7d7;
+        position: relative;
+        label {
+          margin: 6px 0 0 9px;
+          position: absolute;
+          font-size: 14px;
+          color: #aaa;
+        }
+        #inputText {
+          outline: none;
+          width: 670px;
+          background: transparent;
+          overflow: hidden;
+          border: none;
+          resize: none;
+          padding: 7px 25px 7px 7px;
+        }
+        .commentIcons {
+          display: none;
+        }
+        .picTopic {
+          display: none;
+        }
+        .uploadField {
+          display: none;
+        }
+      }
+      .inputBottomBar {
+        display: none;
+      }
+      &.active {
+        .toggleInput {
+          height: auto;
+          textarea {
+            height: 90px;
+          }
+          label {
+            display: none;
+          }
+        }
+        .inputBottomBar {
+          display: flex;
+          height: 32px;
+          background-color: #f4f4f4;
+          border: 1px solid #ccc;
+          border-top: none;
+          padding: 8px;
+          align-items: center;
+          a {
+            font-size: 13px;
+            text-decoration: none;
+            margin-right: 15px;
+            margin-left: 5px;
+            position: relative;
+            &:visited {
+              color: #37a;
+            }
+            &:link {
+              color: #37a;
+            }
+            &:hover{
+              background-color: #37a;
+              color: white;
+            }
+          }
+          .inputBRight {
+            margin-left: auto;
+          }
+        }
+      }
+    }
+  }
   .pagination {
     font-size: 15px;
     padding: 0;
