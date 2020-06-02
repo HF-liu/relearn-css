@@ -227,7 +227,8 @@ a:visited {
       cursor: default; }
     .content .inputContainer .inputNav .inputLeftNav a.active {
       color: black;
-      cursor: default; }
+      cursor: default;
+      pointer-events: none; }
       .content .inputContainer .inputNav .inputLeftNav a.active i::after {
         content: "";
         position: absolute;
@@ -334,6 +335,31 @@ a:visited {
       .content .inputContainer .inputField.pic .toggleInput .uploadField .uploadInner:hover {
         background-color: #f2f2f2; }
 
+.content .inputContainer .inputField.recommend .toggleInput .recommendInput {
+  display: flex;
+  align-items: center;
+  padding: 5px 8px;
+  border-bottom: 1px solid #d7d7d7; }
+  .content .inputContainer .inputField.recommend .toggleInput .recommendInput input {
+    width: 540px;
+    height: 12px;
+    padding: 7px 4px 6px;
+    border: 1px solid #ccc;
+    color: #999;
+    border-radius: 1px; }
+  .content .inputContainer .inputField.recommend .toggleInput .recommendInput button {
+    margin-left: 5px;
+    padding: 4px;
+    font-size: 12px;
+    border-color: #ccc;
+    border-radius: 2px;
+    border-width: 1px;
+    border-style: solid;
+    background-image: -webkit-linear-gradient(top, #fcfcfc, #e9e9e9); }
+
+.content .inputContainer .inputField.recommend .toggleInput label {
+  top: 35px; }
+
 .content .inputContainer .inputField .toggleInput {
   border: 1px solid #d7d7d7;
   position: relative; }
@@ -355,6 +381,8 @@ a:visited {
   .content .inputContainer .inputField .toggleInput .picTopic {
     display: none; }
   .content .inputContainer .inputField .toggleInput .uploadField {
+    display: none; }
+  .content .inputContainer .inputField .toggleInput .recommendInput {
     display: none; }
 
 .content .inputContainer .inputField .inputBottomBar {
@@ -395,7 +423,8 @@ a:visited {
   font-size: 15px;
   padding: 0;
   text-align: center;
-  line-height: 1.5; }
+  line-height: 1.5;
+  margin-top: 20px; }
   .content .pagination a {
     text-decoration: none; }
     .content .pagination a:visited {
