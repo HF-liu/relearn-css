@@ -189,7 +189,8 @@ a:visited {
       background-color: #f2f7f6;
       font-size: 16px;
       padding: 16px;
-      padding-bottom: 7px; }
+      padding-bottom: 7px;
+      margin-bottom: 30px; }
       .mainPage .side .trending .trendingTitle {
         color: #072; }
       .mainPage .side .trending .trendingList {
@@ -207,6 +208,42 @@ a:visited {
             .mainPage .side .trending .trendingList li a:hover {
               color: white;
               background-color: #37a; }
+    .mainPage .side .topics .topicTitle {
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px; }
+      .mainPage .side .topics .topicTitle .topicTitleGreen {
+        font-size: 16px;
+        color: #072; }
+      .mainPage .side .topics .topicTitle .topicLink {
+        font-size: 13px; }
+        .mainPage .side .topics .topicTitle .topicLink a {
+          text-decoration: none;
+          color: #37a;
+          margin: 0 5px; }
+          .mainPage .side .topics .topicTitle .topicLink a:hover {
+            color: white;
+            background-color: #37a; }
+    .mainPage .side .topics .topicList .topicItem {
+      margin-bottom: 15px; }
+      .mainPage .side .topics .topicList .topicItem a {
+        text-decoration: none;
+        color: #37a;
+        font-size: 14px; }
+        .mainPage .side .topics .topicList .topicItem a:hover {
+          color: white;
+          background-color: #37a; }
+      .mainPage .side .topics .topicList .topicItem div {
+        color: #aaa;
+        font-size: 13px; }
+    .mainPage .side .topics .topicFunc a {
+      line-height: 2;
+      text-decoration: none;
+      color: #37a;
+      font-size: 13px; }
+      .mainPage .side .topics .topicFunc a:hover {
+        color: white;
+        background-color: #37a; }
 
 .content .inputContainer .inputNav {
   height: 30px;
