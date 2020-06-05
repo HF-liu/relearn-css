@@ -10,6 +10,8 @@ const label = document.getElementById('inputLabel')
 const inputContainer = document.getElementsByClassName('inputContainer')[0]
 const inputNav = document.getElementsByClassName('inputNav')[0]
 const inputFields = [inputField, inputContainer, inputNav, textarea, label]
+const trendingCard = document.getElementsByClassName('trending')[0]
+const topicCard = document.getElementsByClassName('topics')[0]
 const tabs = {
   comment: document.getElementsByClassName('inputComment')[0],
   pic: document.getElementsByClassName('inputPic')[0],
@@ -97,3 +99,13 @@ textarea.addEventListener('focus', function() {
     inputField.classList = 'inputField active comment'
   }
 })
+
+document.getElementsByTagName('body')[0].onscroll = () => {
+  if (topicCard.getBoundingClientRect().top <= 5) {
+    topicCard.style.position = 'fixed'
+    topicCard.style.top = '5px'
+  }
+  if (trendingCard.getBoundingClientRect().bottom >= -5) {
+    topicCard.style.position = ''
+  }
+}

@@ -175,7 +175,7 @@ a:visited {
 
 .mainPage {
   display: flex;
-  height: 100vh;
+  height: 150vh;
   justify-content: space-between;
   width: 1040px;
   margin: auto; }
