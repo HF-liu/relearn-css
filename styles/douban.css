@@ -208,6 +208,44 @@ a:visited {
             .mainPage .side .trending .trendingList li a:hover {
               color: white;
               background-color: #37a; }
+    .mainPage .side .doubanTime {
+      margin-bottom: 30px; }
+      .mainPage .side .doubanTime .timeTitle {
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px; }
+        .mainPage .side .doubanTime .timeTitle .timeTitleGreen {
+          color: #072; }
+        .mainPage .side .doubanTime .timeTitle .timeLink {
+          font-size: 13px; }
+          .mainPage .side .doubanTime .timeTitle .timeLink a {
+            text-decoration: none;
+            color: #37a;
+            margin: 0 5px; }
+            .mainPage .side .doubanTime .timeTitle .timeLink a:hover {
+              color: white;
+              background-color: #37a; }
+      .mainPage .side .doubanTime .timeContainer {
+        display: flex; }
+        .mainPage .side .doubanTime .timeContainer .timeCourse {
+          width: 80px;
+          text-align: center;
+          margin-right: 40px; }
+          .mainPage .side .doubanTime .timeContainer .timeCourse img {
+            width: 80px;
+            margin-bottom: 10px; }
+          .mainPage .side .doubanTime .timeContainer .timeCourse .mainLink {
+            font-size: 13px;
+            text-decoration: none;
+            margin: 0 5px; }
+            .mainPage .side .doubanTime .timeContainer .timeCourse .mainLink:hover {
+              color: white;
+              background-color: #37a; }
+          .mainPage .side .doubanTime .timeContainer .timeCourse .courseNote {
+            font-size: 13px;
+            color: #999999;
+            margin-top: 10px; }
     .mainPage .side .topics .topicTitle {
       display: flex;
       align-items: center;

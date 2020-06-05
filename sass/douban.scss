@@ -256,6 +256,57 @@ a:visited {
         }
       }
     }
+    .doubanTime {
+      margin-bottom: 30px;
+      .timeTitle {
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+        .timeTitleGreen {
+          color: #072;
+        }
+        .timeLink {
+          font-size: 13px;
+          a {
+            &:hover {
+              color: white;
+              background-color: #37a;
+            }
+            text-decoration: none;
+            color: #37a;
+            margin: 0 5px;
+          }
+        }
+      }
+      .timeContainer {
+        display: flex;
+        .timeCourse {
+          width: 80px;
+          text-align: center;
+          margin-right: 40px;
+          img {
+            width: 80px;
+            margin-bottom: 10px;
+          }
+          .mainLink {
+            font-size: 13px;
+            &:hover {
+              color: white;
+              background-color: #37a;
+            }
+            text-decoration: none;
+            margin: 0 5px;
+          }
+          .courseNote {
+            font-size: 13px;
+            color: #999999;
+            margin-top: 10px;
+
+          }
+        }
+      }
+    }
     .topics {
       .topicTitle {
         display: flex;
