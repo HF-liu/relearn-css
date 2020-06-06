@@ -365,6 +365,7 @@ a:visited {
 
 .content {
   .inputContainer {
+    margin-bottom: 2em;
     .inputNav {
       height: 30px;
       display: flex;
@@ -634,6 +635,162 @@ a:visited {
           }
           .inputBRight {
             margin-left: auto;
+          }
+        }
+      }
+    }
+  }
+  .statusWrapper {
+    width: 100%;
+    .statusItem {
+      width: auto;
+      .statusHeader {
+        display: flex;
+        margin-bottom: 10px;
+        img {
+          width: 48px;
+          height: 48px;
+          margin-right: 20px;
+        }
+        .statusInfo {
+          line-height: 1.62;
+          .statusInfoTop {
+            a {
+              color: #555;
+              text-decoration: none;
+              font-weight: bold;
+              font-size: 14px;
+              &:hover {
+                color: white;
+                background-color: #37a;
+              }
+            }
+            .statusAction {
+              font-size: 14px;
+              color: #9d9d9d;
+            }
+          }
+          .statusInfoDetails {
+            color: #555;
+            font-size: 14px;
+            margin-top: 10px;
+            line-height: 1.62;
+          }
+        }
+      }
+      .statusContent {
+        border-bottom: 1px solid #e5e5e5;
+        padding: 20px 0;
+        padding-left: 10%;
+        .itemBlock {
+          padding: 16px 20px;
+          background: #f9f9f9;
+          display: flex;
+          .itemTitle {
+            display: flex;
+            align-items: center;
+            margin-bottom: 4px;
+            font-size: 15px;
+            line-height: 1.62;
+            a {
+              color: #37a;
+              text-decoration: none;
+              line-height: 1.62;
+              &:hover {
+                color: white;
+                background-color: #37a;
+              }
+            }
+            .itemRating {
+              width: 55px;
+              height: 11px;
+              overflow: hidden;
+              margin-left: 7px;
+              margin-bottom: 4px;
+              zoom: 1;
+              display: inline-block;
+              &.score40 {
+                background-position: 0 -22px;
+              }
+              background: url(../images/ratings.png) no-repeat;
+              background-size: 55px;
+
+            }
+            .itemScore {
+              color: #e09015;
+              font-size: 14px;
+              padding: 0 3px;
+              margin-left: 4px;
+            }
+          }
+          .itemDescription {
+            font-size: 13px;
+            color: #555;
+            line-height: 1.62;
+          }
+          .itemMeta {
+            position: relative;
+            padding-left: 7px;
+            &::before {
+              content: "";
+              position: absolute;
+              height: 90%;
+              top: 2px;
+              left: 0;
+              border-left: 2px solid #ddd;
+            }
+            font-size: 13px;
+            color: #555;
+            line-height: 1.62;
+          }
+          img {
+            width: 75px;
+            height: 75px;
+            margin: 4px 23px 0 50px;
+          }
+        }
+        .functionBlock {
+          line-height: 1;
+          text-align: left;
+          margin: 20px 0 0;
+          color: #aaa;
+          height: 15px;
+          padding: 0;
+          display:flex;
+          align-items: center;
+          a {
+            color: #7094b7;
+            text-decoration: none;
+            line-height: 1;
+            font-size: 13px;
+            display:inline-block;
+            &.time {
+              color: #999;
+              margin-right: 1.5em;
+              &:hover {
+                background: #999;
+                color: white;
+              }
+            }
+            &.func {
+              margin-right: 8px;
+              &.like {
+                margin-right: 4px;
+              }
+              &:hover {
+                background: #7094b7;
+                color: white;
+              }
+            }
+          }
+          div {
+            display: inline;
+            line-height: 1;
+            text-align: left;
+            color: #aaa;
+            font-size: 13px;
+            margin-right: 8px;
+            padding-bottom: 1px;
           }
         }
       }

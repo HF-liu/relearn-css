@@ -283,216 +283,334 @@ a:visited {
         color: white;
         background-color: #37a; }
 
-.content .inputContainer .inputNav {
-  height: 30px;
-  display: flex;
-  align-items: center;
-  padding: 0 2px; }
-  .content .inputContainer .inputNav .inputLeftNav a {
-    font-size: 14px;
-    text-decoration: none;
-    margin-right: 18px;
-    position: relative; }
-    .content .inputContainer .inputNav .inputLeftNav a:visited {
-      color: #37a; }
-    .content .inputContainer .inputNav .inputLeftNav a:link {
-      color: #37a; }
-    .content .inputContainer .inputNav .inputLeftNav a.cur {
-      color: black;
-      cursor: default; }
-    .content .inputContainer .inputNav .inputLeftNav a.active {
-      color: black;
-      cursor: default;
-      pointer-events: none; }
-      .content .inputContainer .inputNav .inputLeftNav a.active i::after {
-        content: "";
-        position: absolute;
-        bottom: -11px;
-        left: 30px;
-        height: 7px;
-        width: 7px;
-        border: 1px solid #ccc;
-        border-width: 1px 1px 0 0;
-        background: #fff;
-        transform: rotate(-45deg);
-        z-index: 1; }
-    .content .inputContainer .inputNav .inputLeftNav a:hover:not(.cur) {
-      background-color: #37a;
-      color: white; }
-      .content .inputContainer .inputNav .inputLeftNav a:hover:not(.cur) i {
-        color: #8f9197;
-        background-color: white; }
-    .content .inputContainer .inputNav .inputLeftNav a i {
-      padding: 1px 5px 1px 0;
+.content .inputContainer {
+  margin-bottom: 2em; }
+  .content .inputContainer .inputNav {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 2px; }
+    .content .inputContainer .inputNav .inputLeftNav a {
+      font-size: 14px;
+      text-decoration: none;
+      margin-right: 18px;
+      position: relative; }
+      .content .inputContainer .inputNav .inputLeftNav a:visited {
+        color: #37a; }
+      .content .inputContainer .inputNav .inputLeftNav a:link {
+        color: #37a; }
+      .content .inputContainer .inputNav .inputLeftNav a.cur {
+        color: black;
+        cursor: default; }
+      .content .inputContainer .inputNav .inputLeftNav a.active {
+        color: black;
+        cursor: default;
+        pointer-events: none; }
+        .content .inputContainer .inputNav .inputLeftNav a.active i::after {
+          content: "";
+          position: absolute;
+          bottom: -11px;
+          left: 30px;
+          height: 7px;
+          width: 7px;
+          border: 1px solid #ccc;
+          border-width: 1px 1px 0 0;
+          background: #fff;
+          transform: rotate(-45deg);
+          z-index: 1; }
+      .content .inputContainer .inputNav .inputLeftNav a:hover:not(.cur) {
+        background-color: #37a;
+        color: white; }
+        .content .inputContainer .inputNav .inputLeftNav a:hover:not(.cur) i {
+          color: #8f9197;
+          background-color: white; }
+      .content .inputContainer .inputNav .inputLeftNav a i {
+        padding: 1px 5px 1px 0;
+        color: #8f9197; }
+    .content .inputContainer .inputNav .inputRightNav {
+      margin-left: auto; }
+      .content .inputContainer .inputNav .inputRightNav a {
+        font-size: 13px;
+        text-decoration: none;
+        color: #ccc; }
+  .content .inputContainer .inputField.inactive .toggleInput .commentIcons {
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: 15px; }
+    .content .inputContainer .inputField.inactive .toggleInput .commentIcons i {
+      padding-left: 5px;
       color: #8f9197; }
-  .content .inputContainer .inputNav .inputRightNav {
-    margin-left: auto; }
-    .content .inputContainer .inputNav .inputRightNav a {
-      font-size: 13px;
-      text-decoration: none;
-      color: #ccc; }
-
-.content .inputContainer .inputField.inactive .toggleInput .commentIcons {
-  display: block;
-  position: absolute;
-  top: 8px;
-  right: 15px; }
-  .content .inputContainer .inputField.inactive .toggleInput .commentIcons i {
-    padding-left: 5px;
-    color: #8f9197; }
-  .content .inputContainer .inputField.inactive .toggleInput .commentIcons span {
-    display: none; }
-
-.content .inputContainer .inputField.comment.active .toggleInput .commentIcons {
-  display: block;
-  position: absolute;
-  bottom: 5px;
-  left: 5px; }
-  .content .inputContainer .inputField.comment.active .toggleInput .commentIcons a {
-    color: #8f9197;
-    font-size: 13px;
-    text-decoration: none; }
-  .content .inputContainer .inputField.comment.active .toggleInput .commentIcons i {
-    color: #8f9197;
-    padding-left: 5px; }
-  .content .inputContainer .inputField.comment.active .toggleInput .commentIcons span {
-    padding-left: 5px;
-    display: auto; }
-
-.content .inputContainer .inputField.pic .toggleInput {
-  height: auto; }
-  .content .inputContainer .inputField.pic .toggleInput label {
-    display: none; }
-  .content .inputContainer .inputField.pic .toggleInput textarea {
-    height: 90px; }
-  .content .inputContainer .inputField.pic .toggleInput .picTopic {
+    .content .inputContainer .inputField.inactive .toggleInput .commentIcons span {
+      display: none; }
+  .content .inputContainer .inputField.comment.active .toggleInput .commentIcons {
     display: block;
     position: absolute;
-    background-color: #dedbdb;
-    border-radius: 4px;
-    padding: 2px 9px;
-    font-size: 13px;
-    line-height: 1.62;
-    top: 75px;
-    right: 10px; }
-    .content .inputContainer .inputField.pic .toggleInput .picTopic a {
-      text-decoration: none;
-      color: white; }
-  .content .inputContainer .inputField.pic .toggleInput .uploadField {
-    display: block;
-    border-top: 1px solid #d7d7d7;
-    padding: 10px 0; }
-    .content .inputContainer .inputField.pic .toggleInput .uploadField .uploadInner {
-      color: #cdcdcd;
+    bottom: 5px;
+    left: 5px; }
+    .content .inputContainer .inputField.comment.active .toggleInput .commentIcons a {
+      color: #8f9197;
       font-size: 13px;
-      border: 3px dashed #eee;
-      margin: auto;
-      width: 650px;
-      height: 90px;
-      background-color: #fafafa;
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-      .content .inputContainer .inputField.pic .toggleInput .uploadField .uploadInner .dragTip {
-        position: absolute;
-        top: 3px;
-        left: 3px; }
-      .content .inputContainer .inputField.pic .toggleInput .uploadField .uploadInner .uploadIcon {
-        padding-top: 15px;
-        text-align: center;
-        color: #aaa;
-        font-size: 28px; }
-        .content .inputContainer .inputField.pic .toggleInput .uploadField .uploadInner .uploadIcon .uploadTitle {
-          font-size: 14px; }
-        .content .inputContainer .inputField.pic .toggleInput .uploadField .uploadInner .uploadIcon .uploadDes {
-          font: 13px Helvetica,Arial,sans-serif; }
-      .content .inputContainer .inputField.pic .toggleInput .uploadField .uploadInner:hover {
-        background-color: #f2f2f2; }
-
-.content .inputContainer .inputField.recommend .toggleInput .recommendInput {
-  display: flex;
-  align-items: center;
-  padding: 5px 8px;
-  border-bottom: 1px solid #d7d7d7; }
-  .content .inputContainer .inputField.recommend .toggleInput .recommendInput input {
-    width: 540px;
-    height: 12px;
-    padding: 7px 4px 6px;
-    border: 1px solid #ccc;
-    color: #999;
-    border-radius: 1px; }
-  .content .inputContainer .inputField.recommend .toggleInput .recommendInput button {
-    margin-left: 5px;
-    padding: 4px;
-    font-size: 12px;
-    border-color: #ccc;
-    border-radius: 2px;
-    border-width: 1px;
-    border-style: solid;
-    background-image: -webkit-linear-gradient(top, #fcfcfc, #e9e9e9); }
-
-.content .inputContainer .inputField.recommend .toggleInput label {
-  top: 35px; }
-
-.content .inputContainer .inputField .toggleInput {
-  border: 1px solid #d7d7d7;
-  position: relative; }
-  .content .inputContainer .inputField .toggleInput label {
-    margin: 6px 0 0 9px;
-    position: absolute;
-    font-size: 14px;
-    color: #aaa; }
-  .content .inputContainer .inputField .toggleInput #inputText {
-    outline: none;
-    width: 670px;
-    background: transparent;
-    overflow: hidden;
-    border: none;
-    resize: none;
-    padding: 7px 25px 7px 7px; }
-  .content .inputContainer .inputField .toggleInput .commentIcons {
-    display: none; }
-  .content .inputContainer .inputField .toggleInput .picTopic {
-    display: none; }
-  .content .inputContainer .inputField .toggleInput .uploadField {
-    display: none; }
-  .content .inputContainer .inputField .toggleInput .recommendInput {
-    display: none; }
-
-.content .inputContainer .inputField .inputBottomBar {
-  display: none; }
-
-.content .inputContainer .inputField.active .toggleInput {
-  height: auto; }
-  .content .inputContainer .inputField.active .toggleInput textarea {
-    height: 90px; }
-  .content .inputContainer .inputField.active .toggleInput label {
-    display: none; }
-
-.content .inputContainer .inputField.active .inputBottomBar {
-  display: flex;
-  height: 32px;
-  background-color: #f4f4f4;
-  border: 1px solid #ccc;
-  border-top: none;
-  padding: 8px;
-  align-items: center; }
-  .content .inputContainer .inputField.active .inputBottomBar a {
-    font-size: 13px;
-    text-decoration: none;
-    margin-right: 15px;
-    margin-left: 5px;
+      text-decoration: none; }
+    .content .inputContainer .inputField.comment.active .toggleInput .commentIcons i {
+      color: #8f9197;
+      padding-left: 5px; }
+    .content .inputContainer .inputField.comment.active .toggleInput .commentIcons span {
+      padding-left: 5px;
+      display: auto; }
+  .content .inputContainer .inputField.pic .toggleInput {
+    height: auto; }
+    .content .inputContainer .inputField.pic .toggleInput label {
+      display: none; }
+    .content .inputContainer .inputField.pic .toggleInput textarea {
+      height: 90px; }
+    .content .inputContainer .inputField.pic .toggleInput .picTopic {
+      display: block;
+      position: absolute;
+      background-color: #dedbdb;
+      border-radius: 4px;
+      padding: 2px 9px;
+      font-size: 13px;
+      line-height: 1.62;
+      top: 75px;
+      right: 10px; }
+      .content .inputContainer .inputField.pic .toggleInput .picTopic a {
+        text-decoration: none;
+        color: white; }
+    .content .inputContainer .inputField.pic .toggleInput .uploadField {
+      display: block;
+      border-top: 1px solid #d7d7d7;
+      padding: 10px 0; }
+      .content .inputContainer .inputField.pic .toggleInput .uploadField .uploadInner {
+        color: #cdcdcd;
+        font-size: 13px;
+        border: 3px dashed #eee;
+        margin: auto;
+        width: 650px;
+        height: 90px;
+        background-color: #fafafa;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .content .inputContainer .inputField.pic .toggleInput .uploadField .uploadInner .dragTip {
+          position: absolute;
+          top: 3px;
+          left: 3px; }
+        .content .inputContainer .inputField.pic .toggleInput .uploadField .uploadInner .uploadIcon {
+          padding-top: 15px;
+          text-align: center;
+          color: #aaa;
+          font-size: 28px; }
+          .content .inputContainer .inputField.pic .toggleInput .uploadField .uploadInner .uploadIcon .uploadTitle {
+            font-size: 14px; }
+          .content .inputContainer .inputField.pic .toggleInput .uploadField .uploadInner .uploadIcon .uploadDes {
+            font: 13px Helvetica,Arial,sans-serif; }
+        .content .inputContainer .inputField.pic .toggleInput .uploadField .uploadInner:hover {
+          background-color: #f2f2f2; }
+  .content .inputContainer .inputField.recommend .toggleInput .recommendInput {
+    display: flex;
+    align-items: center;
+    padding: 5px 8px;
+    border-bottom: 1px solid #d7d7d7; }
+    .content .inputContainer .inputField.recommend .toggleInput .recommendInput input {
+      width: 540px;
+      height: 12px;
+      padding: 7px 4px 6px;
+      border: 1px solid #ccc;
+      color: #999;
+      border-radius: 1px; }
+    .content .inputContainer .inputField.recommend .toggleInput .recommendInput button {
+      margin-left: 5px;
+      padding: 4px;
+      font-size: 12px;
+      border-color: #ccc;
+      border-radius: 2px;
+      border-width: 1px;
+      border-style: solid;
+      background-image: -webkit-linear-gradient(top, #fcfcfc, #e9e9e9); }
+  .content .inputContainer .inputField.recommend .toggleInput label {
+    top: 35px; }
+  .content .inputContainer .inputField .toggleInput {
+    border: 1px solid #d7d7d7;
     position: relative; }
-    .content .inputContainer .inputField.active .inputBottomBar a:visited {
-      color: #37a; }
-    .content .inputContainer .inputField.active .inputBottomBar a:link {
-      color: #37a; }
-    .content .inputContainer .inputField.active .inputBottomBar a:hover {
-      background-color: #37a;
-      color: white; }
-  .content .inputContainer .inputField.active .inputBottomBar .inputBRight {
-    margin-left: auto; }
+    .content .inputContainer .inputField .toggleInput label {
+      margin: 6px 0 0 9px;
+      position: absolute;
+      font-size: 14px;
+      color: #aaa; }
+    .content .inputContainer .inputField .toggleInput #inputText {
+      outline: none;
+      width: 670px;
+      background: transparent;
+      overflow: hidden;
+      border: none;
+      resize: none;
+      padding: 7px 25px 7px 7px; }
+    .content .inputContainer .inputField .toggleInput .commentIcons {
+      display: none; }
+    .content .inputContainer .inputField .toggleInput .picTopic {
+      display: none; }
+    .content .inputContainer .inputField .toggleInput .uploadField {
+      display: none; }
+    .content .inputContainer .inputField .toggleInput .recommendInput {
+      display: none; }
+  .content .inputContainer .inputField .inputBottomBar {
+    display: none; }
+  .content .inputContainer .inputField.active .toggleInput {
+    height: auto; }
+    .content .inputContainer .inputField.active .toggleInput textarea {
+      height: 90px; }
+    .content .inputContainer .inputField.active .toggleInput label {
+      display: none; }
+  .content .inputContainer .inputField.active .inputBottomBar {
+    display: flex;
+    height: 32px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-top: none;
+    padding: 8px;
+    align-items: center; }
+    .content .inputContainer .inputField.active .inputBottomBar a {
+      font-size: 13px;
+      text-decoration: none;
+      margin-right: 15px;
+      margin-left: 5px;
+      position: relative; }
+      .content .inputContainer .inputField.active .inputBottomBar a:visited {
+        color: #37a; }
+      .content .inputContainer .inputField.active .inputBottomBar a:link {
+        color: #37a; }
+      .content .inputContainer .inputField.active .inputBottomBar a:hover {
+        background-color: #37a;
+        color: white; }
+    .content .inputContainer .inputField.active .inputBottomBar .inputBRight {
+      margin-left: auto; }
+
+.content .statusWrapper {
+  width: 100%; }
+  .content .statusWrapper .statusItem {
+    width: auto; }
+    .content .statusWrapper .statusItem .statusHeader {
+      display: flex;
+      margin-bottom: 10px; }
+      .content .statusWrapper .statusItem .statusHeader img {
+        width: 48px;
+        height: 48px;
+        margin-right: 20px; }
+      .content .statusWrapper .statusItem .statusHeader .statusInfo {
+        line-height: 1.62; }
+        .content .statusWrapper .statusItem .statusHeader .statusInfo .statusInfoTop a {
+          color: #555;
+          text-decoration: none;
+          font-weight: bold;
+          font-size: 14px; }
+          .content .statusWrapper .statusItem .statusHeader .statusInfo .statusInfoTop a:hover {
+            color: white;
+            background-color: #37a; }
+        .content .statusWrapper .statusItem .statusHeader .statusInfo .statusInfoTop .statusAction {
+          font-size: 14px;
+          color: #9d9d9d; }
+        .content .statusWrapper .statusItem .statusHeader .statusInfo .statusInfoDetails {
+          color: #555;
+          font-size: 14px;
+          margin-top: 10px;
+          line-height: 1.62; }
+    .content .statusWrapper .statusItem .statusContent {
+      border-bottom: 1px solid #e5e5e5;
+      padding: 20px 0;
+      padding-left: 10%; }
+      .content .statusWrapper .statusItem .statusContent .itemBlock {
+        padding: 16px 20px;
+        background: #f9f9f9;
+        display: flex; }
+        .content .statusWrapper .statusItem .statusContent .itemBlock .itemTitle {
+          display: flex;
+          align-items: center;
+          margin-bottom: 4px;
+          font-size: 15px;
+          line-height: 1.62; }
+          .content .statusWrapper .statusItem .statusContent .itemBlock .itemTitle a {
+            color: #37a;
+            text-decoration: none;
+            line-height: 1.62; }
+            .content .statusWrapper .statusItem .statusContent .itemBlock .itemTitle a:hover {
+              color: white;
+              background-color: #37a; }
+          .content .statusWrapper .statusItem .statusContent .itemBlock .itemTitle .itemRating {
+            width: 55px;
+            height: 11px;
+            overflow: hidden;
+            margin-left: 7px;
+            margin-bottom: 4px;
+            zoom: 1;
+            display: inline-block;
+            background: url(../images/ratings.png) no-repeat;
+            background-size: 55px; }
+            .content .statusWrapper .statusItem .statusContent .itemBlock .itemTitle .itemRating.score40 {
+              background-position: 0 -22px; }
+          .content .statusWrapper .statusItem .statusContent .itemBlock .itemTitle .itemScore {
+            color: #e09015;
+            font-size: 14px;
+            padding: 0 3px;
+            margin-left: 4px; }
+        .content .statusWrapper .statusItem .statusContent .itemBlock .itemDescription {
+          font-size: 13px;
+          color: #555;
+          line-height: 1.62; }
+        .content .statusWrapper .statusItem .statusContent .itemBlock .itemMeta {
+          position: relative;
+          padding-left: 7px;
+          font-size: 13px;
+          color: #555;
+          line-height: 1.62; }
+          .content .statusWrapper .statusItem .statusContent .itemBlock .itemMeta::before {
+            content: "";
+            position: absolute;
+            height: 90%;
+            top: 2px;
+            left: 0;
+            border-left: 2px solid #ddd; }
+        .content .statusWrapper .statusItem .statusContent .itemBlock img {
+          width: 75px;
+          height: 75px;
+          margin: 4px 23px 0 50px; }
+      .content .statusWrapper .statusItem .statusContent .functionBlock {
+        line-height: 1;
+        text-align: left;
+        margin: 20px 0 0;
+        color: #aaa;
+        height: 15px;
+        padding: 0;
+        display: flex;
+        align-items: center; }
+        .content .statusWrapper .statusItem .statusContent .functionBlock a {
+          color: #7094b7;
+          text-decoration: none;
+          line-height: 1;
+          font-size: 13px;
+          display: inline-block; }
+          .content .statusWrapper .statusItem .statusContent .functionBlock a.time {
+            color: #999;
+            margin-right: 1.5em; }
+            .content .statusWrapper .statusItem .statusContent .functionBlock a.time:hover {
+              background: #999;
+              color: white; }
+          .content .statusWrapper .statusItem .statusContent .functionBlock a.func {
+            margin-right: 8px; }
+            .content .statusWrapper .statusItem .statusContent .functionBlock a.func.like {
+              margin-right: 4px; }
+            .content .statusWrapper .statusItem .statusContent .functionBlock a.func:hover {
+              background: #7094b7;
+              color: white; }
+        .content .statusWrapper .statusItem .statusContent .functionBlock div {
+          display: inline;
+          line-height: 1;
+          text-align: left;
+          color: #aaa;
+          font-size: 13px;
+          margin-right: 8px;
+          padding-bottom: 1px; }
 
 .content .pagination {
   font-size: 15px;
