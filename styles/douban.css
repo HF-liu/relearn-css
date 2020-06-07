@@ -493,7 +493,8 @@ a:visited {
     width: auto; }
     .content .statusWrapper .statusItem .statusHeader {
       display: flex;
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      margin-top: 20px; }
       .content .statusWrapper .statusItem .statusHeader img {
         width: 48px;
         height: 48px;
@@ -518,8 +519,8 @@ a:visited {
           line-height: 1.62; }
     .content .statusWrapper .statusItem .statusContent {
       border-bottom: 1px solid #e5e5e5;
-      padding: 20px 0;
-      padding-left: 10%; }
+      padding-left: 10%;
+      padding-bottom: 20px; }
       .content .statusWrapper .statusItem .statusContent .itemBlock {
         padding: 16px 20px;
         background: #f9f9f9;
@@ -549,6 +550,8 @@ a:visited {
             background-size: 55px; }
             .content .statusWrapper .statusItem .statusContent .itemBlock .itemTitle .itemRating.score40 {
               background-position: 0 -22px; }
+            .content .statusWrapper .statusItem .statusContent .itemBlock .itemTitle .itemRating.score0 {
+              background-position: 0 -110px; }
           .content .statusWrapper .statusItem .statusContent .itemBlock .itemTitle .itemScore {
             color: #e09015;
             font-size: 14px;
@@ -575,6 +578,8 @@ a:visited {
           width: 75px;
           height: 75px;
           margin: 4px 23px 0 50px; }
+          .content .statusWrapper .statusItem .statusContent .itemBlock img.game {
+            height: auto; }
       .content .statusWrapper .statusItem .statusContent .functionBlock {
         line-height: 1;
         text-align: left;
@@ -599,7 +604,7 @@ a:visited {
           .content .statusWrapper .statusItem .statusContent .functionBlock a.func {
             margin-right: 8px; }
             .content .statusWrapper .statusItem .statusContent .functionBlock a.func.like {
-              margin-right: 4px; }
+              margin-right: 2px; }
             .content .statusWrapper .statusItem .statusContent .functionBlock a.func:hover {
               background: #7094b7;
               color: white; }
