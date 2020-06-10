@@ -175,7 +175,6 @@ a:visited {
 
 .mainPage {
   display: flex;
-  height: 150vh;
   justify-content: space-between;
   width: 1040px;
   margin: auto; }
@@ -521,6 +520,46 @@ a:visited {
       border-bottom: 1px solid #e5e5e5;
       padding-left: 10%;
       padding-bottom: 20px; }
+      .content .statusWrapper .statusItem .statusContent .spicContainer {
+        width: 354px;
+        display: flex;
+        flex-wrap: wrap; }
+        .content .statusWrapper .statusItem .statusContent .spicContainer.collapse {
+          width: 526px;
+          height: auto; }
+          .content .statusWrapper .statusItem .statusContent .spicContainer.collapse .spic {
+            width: 100%;
+            height: auto; }
+            .content .statusWrapper .statusItem .statusContent .spicContainer.collapse .spic img {
+              width: 100%;
+              height: auto; }
+        .content .statusWrapper .statusItem .statusContent .spicContainer .spic {
+          cursor: pointer; }
+          .content .statusWrapper .statusItem .statusContent .spicContainer .spic img {
+            width: 172px;
+            height: auto;
+            max-width: initial; }
+      .content .statusWrapper .statusItem .statusContent .picContainer {
+        width: 354px;
+        height: 354px;
+        display: flex;
+        flex-wrap: wrap; }
+        .content .statusWrapper .statusItem .statusContent .picContainer .pic {
+          width: 112px;
+          height: 112px;
+          overflow: hidden;
+          margin-top: 6px;
+          margin-right: 6px;
+          cursor: pointer; }
+        .content .statusWrapper .statusItem .statusContent .picContainer.collapse {
+          width: 526px;
+          height: auto; }
+          .content .statusWrapper .statusItem .statusContent .picContainer.collapse .pic {
+            width: 100%;
+            height: auto; }
+            .content .statusWrapper .statusItem .statusContent .picContainer.collapse .pic img {
+              width: 100%;
+              height: auto; }
       .content .statusWrapper .statusItem .statusContent .itemBlock {
         padding: 16px 20px;
         background: #f9f9f9;

@@ -12,6 +12,7 @@ const inputNav = document.getElementsByClassName('inputNav')[0]
 const inputFields = [inputField, inputContainer, inputNav, textarea, label]
 const trendingCard = document.getElementsByClassName('doubanTime')[0]
 const topicCard = document.getElementsByClassName('topics')[0]
+const picContainers = document.getElementsByClassName('pic')
 const tabs = {
   comment: document.getElementsByClassName('inputComment')[0],
   pic: document.getElementsByClassName('inputPic')[0],
@@ -109,3 +110,45 @@ document.getElementsByTagName('body')[0].onscroll = () => {
     topicCard.style.position = ''
   }
 }
+
+function setPicAttributes () {
+  const parent = document.getElementsByClassName('picContainer')[0]
+  if (parent.classList.contains('collapse')) {
+    for (let i = 0; i < picContainers.length; i++) {
+      let curEle = picContainers[i].childNodes[0]
+      curEle.style.width = '526px'
+      curEle.style.height = 'auto'
+    }
+  } else {
+    for (let i = 0; i < picContainers.length; i++) {
+        let curEle = picContainers[i].childNodes[0]
+        const width = curEle.clientWidth
+        const height = curEle.clientHeight
+        if(width <= height) {
+          curEle.style.width = '112px'
+          curEle.style.height = 'auto'
+          curEle.style.maxHeight = 'initial'
+        } else {
+          curEle.style.height = '112px'
+          curEle.style.width = 'auto'
+          curEle.style.maxWidth = 'initial'
+        }
+    }
+  }
+}
+
+function toggleSinglePic(event) {
+  const ele = document.getElementsByClassName('spicContainer')[0]
+  ele.classList.toggle('collapse')
+}
+
+function togglePic(event) {
+  if (event.target.nodeName === 'IMG') {
+    event.target.parentElement.parentElement.classList.toggle('collapse')
+  } else {
+    event.target.parentElement.classList.toggle('collapse')
+  }
+  setPicAttributes()
+}
+
+setPicAttributes()

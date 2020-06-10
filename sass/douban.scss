@@ -215,7 +215,6 @@ a:visited {
 
 .mainPage {
   display: flex;
-  height: 150vh;
   justify-content: space-between;
   width: 1040px;
   margin: auto;
@@ -684,6 +683,57 @@ a:visited {
         // padding: 20px 0;
         padding-left: 10%;
         padding-bottom: 20px;
+        .spicContainer {
+          width: 354px;
+          display: flex;
+          flex-wrap: wrap;
+          &.collapse {
+            width: 526px;
+            height: auto;
+            .spic {
+              width: 100%;
+              height: auto;
+              img {
+                width: 100%;
+                height: auto;
+              }
+            }
+          }
+          .spic {
+            cursor: pointer;
+            img {
+              width: 172px;
+              height: auto;
+              max-width: initial;
+            }
+          }
+        }
+        .picContainer {
+          width: 354px;
+          height: 354px;
+          display: flex;
+          flex-wrap: wrap;
+          .pic {
+            width: 112px;
+            height: 112px;
+            overflow: hidden;
+            margin-top: 6px;
+            margin-right: 6px;
+            cursor: pointer;
+          }
+          &.collapse {
+            width: 526px;
+            height: auto;
+            .pic {
+              width: 100%;
+              height: auto;
+              img {
+                width: 100%;
+                height: auto;
+              }
+            }
+          }
+        }
         .itemBlock {
           padding: 16px 20px;
           background: #f9f9f9;
