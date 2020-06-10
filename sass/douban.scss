@@ -307,6 +307,7 @@ a:visited {
       }
     }
     .topics {
+      margin-bottom: 30px;
       .topicTitle {
         display: flex;
         align-items: center;
@@ -347,6 +348,51 @@ a:visited {
         }
       }
       .topicFunc {
+        a {
+          line-height: 2;
+          &:hover {
+            color: white;
+            background-color: #37a;
+          }
+          text-decoration: none;
+          color: #37a;
+          font-size: 13px;
+        }
+      }
+    }
+    .followers {
+      .followTitle {
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+        .followTitleGreen {
+          color: #072;
+        }
+        .followLink {
+          font-size: 13px;
+          a {
+            &:hover {
+              color: white;
+              background-color: #37a;
+            }
+            text-decoration: none;
+            color: #37a;
+            margin: 0 5px;
+          }
+        }
+      }
+      .followContainer {
+        img {
+          width: 33px;
+          margin-left: 10px;
+          cursor: pointer;
+          &:first-of-type {
+            margin-left: 0;
+          }
+        }
+      }
+      .followFunc {
         a {
           line-height: 2;
           &:hover {
@@ -911,6 +957,71 @@ footer {
       color: white;
       background-color: #37a;
     }
+  }
+}
+
+// .float {
+//   width: 55px;
+//   height: 55px;
+//   background-color: white;
+// }
+
+// .floatButton {
+//   z-index: 99;
+//   position: fixed;
+//   bottom: 10%;
+//   right: 10%;
+//   background-color: #1fe481;
+//   width: 50px;
+//   height: 50px;
+//   border-radius: 50%;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   i {
+//     color: white;
+//   }
+//   box-shadow: 0px 0px 4px #d4d4d4;
+//   &:hover {
+//     cursor: pointer;
+//     box-shadow: 0px 0px 8px #107e4770;
+//   }
+// }
+
+.float {
+  width: 80px;
+  height: 80px;
+  // background-color: rgba(255, 255, 255, 0.63);
+  background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgba(255,255,255,0) 70%);
+  z-index: 99;
+  position: fixed;
+  bottom: 10%;
+  right: 10%;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  a {
+    text-decoration: none;
+  }
+}
+
+.floatButton {
+  background-color: #1fe481;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  i {
+    font-size: 24px;
+    color: white;
+  }
+  box-shadow: 0px 0px 4px #d4d4d4;
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 8px #107e4770;
   }
 }
 

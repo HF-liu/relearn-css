@@ -12,7 +12,9 @@ const inputNav = document.getElementsByClassName('inputNav')[0]
 const inputFields = [inputField, inputContainer, inputNav, textarea, label]
 const trendingCard = document.getElementsByClassName('doubanTime')[0]
 const topicCard = document.getElementsByClassName('topics')[0]
+const followers = document.getElementsByClassName('followers')[0]
 const picContainers = document.getElementsByClassName('pic')
+const floatButton = document.getElementsByClassName('floatButton')[0]
 const tabs = {
   comment: document.getElementsByClassName('inputComment')[0],
   pic: document.getElementsByClassName('inputPic')[0],
@@ -105,10 +107,15 @@ document.getElementsByTagName('body')[0].onscroll = () => {
   if (topicCard.getBoundingClientRect().top <= 5) {
     topicCard.style.position = 'fixed'
     topicCard.style.top = '5px'
+    followers.style.position = 'fixed'
+    followers.style.top = '545px'
   }
   if (trendingCard.getBoundingClientRect().bottom >= -5) {
     topicCard.style.position = ''
+    followers.style.position = ''
   }
+  // floatButton.style.bottom = '10%'
+  // floatButton.style.right = '10%'
 }
 
 function setPicAttributes () {

@@ -245,40 +245,72 @@ a:visited {
             font-size: 13px;
             color: #999999;
             margin-top: 10px; }
-    .mainPage .side .topics .topicTitle {
+    .mainPage .side .topics {
+      margin-bottom: 30px; }
+      .mainPage .side .topics .topicTitle {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px; }
+        .mainPage .side .topics .topicTitle .topicTitleGreen {
+          font-size: 16px;
+          color: #072; }
+        .mainPage .side .topics .topicTitle .topicLink {
+          font-size: 13px; }
+          .mainPage .side .topics .topicTitle .topicLink a {
+            text-decoration: none;
+            color: #37a;
+            margin: 0 5px; }
+            .mainPage .side .topics .topicTitle .topicLink a:hover {
+              color: white;
+              background-color: #37a; }
+      .mainPage .side .topics .topicList .topicItem {
+        margin-bottom: 15px; }
+        .mainPage .side .topics .topicList .topicItem a {
+          text-decoration: none;
+          color: #37a;
+          font-size: 14px; }
+          .mainPage .side .topics .topicList .topicItem a:hover {
+            color: white;
+            background-color: #37a; }
+        .mainPage .side .topics .topicList .topicItem div {
+          color: #aaa;
+          font-size: 13px; }
+      .mainPage .side .topics .topicFunc a {
+        line-height: 2;
+        text-decoration: none;
+        color: #37a;
+        font-size: 13px; }
+        .mainPage .side .topics .topicFunc a:hover {
+          color: white;
+          background-color: #37a; }
+    .mainPage .side .followers .followTitle {
+      font-size: 16px;
       display: flex;
       align-items: center;
       margin-bottom: 12px; }
-      .mainPage .side .topics .topicTitle .topicTitleGreen {
-        font-size: 16px;
+      .mainPage .side .followers .followTitle .followTitleGreen {
         color: #072; }
-      .mainPage .side .topics .topicTitle .topicLink {
+      .mainPage .side .followers .followTitle .followLink {
         font-size: 13px; }
-        .mainPage .side .topics .topicTitle .topicLink a {
+        .mainPage .side .followers .followTitle .followLink a {
           text-decoration: none;
           color: #37a;
           margin: 0 5px; }
-          .mainPage .side .topics .topicTitle .topicLink a:hover {
+          .mainPage .side .followers .followTitle .followLink a:hover {
             color: white;
             background-color: #37a; }
-    .mainPage .side .topics .topicList .topicItem {
-      margin-bottom: 15px; }
-      .mainPage .side .topics .topicList .topicItem a {
-        text-decoration: none;
-        color: #37a;
-        font-size: 14px; }
-        .mainPage .side .topics .topicList .topicItem a:hover {
-          color: white;
-          background-color: #37a; }
-      .mainPage .side .topics .topicList .topicItem div {
-        color: #aaa;
-        font-size: 13px; }
-    .mainPage .side .topics .topicFunc a {
+    .mainPage .side .followers .followContainer img {
+      width: 33px;
+      margin-left: 10px;
+      cursor: pointer; }
+      .mainPage .side .followers .followContainer img:first-of-type {
+        margin-left: 0; }
+    .mainPage .side .followers .followFunc a {
       line-height: 2;
       text-decoration: none;
       color: #37a;
       font-size: 13px; }
-      .mainPage .side .topics .topicFunc a:hover {
+      .mainPage .side .followers .followFunc a:hover {
         color: white;
         background-color: #37a; }
 
@@ -702,6 +734,37 @@ footer {
     footer a:hover {
       color: white;
       background-color: #37a; }
+
+.float {
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(circle, white 0%, rgba(255, 255, 255, 0) 70%);
+  z-index: 99;
+  position: fixed;
+  bottom: 10%;
+  right: 10%;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center; }
+  .float a {
+    text-decoration: none; }
+
+.floatButton {
+  background-color: #1fe481;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 4px #d4d4d4; }
+  .floatButton i {
+    font-size: 24px;
+    color: white; }
+  .floatButton:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 8px #107e4770; }
 
 @media (max-width: 1024px) {
   .mainPage {
