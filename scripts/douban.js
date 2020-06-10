@@ -114,8 +114,6 @@ document.getElementsByTagName('body')[0].onscroll = () => {
     topicCard.style.position = ''
     followers.style.position = ''
   }
-  // floatButton.style.bottom = '10%'
-  // floatButton.style.right = '10%'
 }
 
 function setPicAttributes () {
@@ -158,4 +156,6 @@ function togglePic(event) {
   setPicAttributes()
 }
 
-setPicAttributes()
+document.addEventListener('DOMContentLoaded', function () {
+  setTimeout(setPicAttributes, 300)
+}, false)
