@@ -1,0 +1,16 @@
+.polkaContainer {
+  width: 500px;
+  height: 500px;
+  border: 1px solid grey;
+  margin: auto;
+  margin-bottom: 20px; }
+  .polkaContainer.num1 {
+    background: #0088c7;
+    background-image: radial-gradient(#fa9600 10%, transparent 0), radial-gradient(#fa9600 10%, transparent 0);
+    background-size: 100px 100px;
+    background-position: 0 0, 50px 50px; }
+  .polkaContainer.num2 {
+    background: #efefef;
+    background-image: radial-gradient(#c9c9c9 20%, transparent 0), radial-gradient(#c9c9c9 20%, transparent 0);
+    background-size: 80px 80px;
+    background-position: 0 0, 40px 40px; }

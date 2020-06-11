@@ -1,0 +1,26 @@
+@mixin polka($size, $dot, $base, $accent) {
+  background: $base;
+  background-image: 
+    radial-gradient($accent $dot, transparent 0),
+    radial-gradient($accent $dot, transparent 0);
+    background-size: $size $size;
+    background-position: 0 0, $size/2 $size/2;
+}
+
+.polkaContainer{
+  width: 500px;
+  height: 500px;
+  border: 1px solid grey;
+  margin: auto;
+  margin-bottom: 20px;
+  &.num1 {
+    background: rgb(0, 136, 199);
+    background-image: 
+    radial-gradient(rgb(250, 150, 0) 10%, transparent 0), radial-gradient(rgb(250, 150, 0) 10%, transparent 0);
+    background-size: 100px 100px;
+    background-position: 0 0, 50px 50px;
+  }
+  &.num2 {
+    @include polka(80px, 20%, #efefef,  rgb(201, 201, 201))
+  }
+}
