@@ -1,0 +1,16 @@
+.chessBoard {
+  width: 500px;
+  height: 500px;
+  border: 1px solid grey;
+  margin: auto;
+  margin-bottom: 20px; }
+  .chessBoard.num1 {
+    background: #eee;
+    background-image: linear-gradient(45deg, #bbb 25%, transparent 0), linear-gradient(45deg, transparent 75%, #bbb 0), linear-gradient(45deg, #bbb 25%, transparent 0), linear-gradient(45deg, transparent 75%, #bbb 0);
+    background-size: 30px 30px;
+    background-position: 0 0, 15px 15px, 15px 15px, 30px 30px; }
+  .chessBoard.num2 {
+    background: bisque;
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.25) 25%, transparent 0, transparent 75%, rgba(0, 0, 0, 0.25) 0), linear-gradient(45deg, rgba(0, 95, 150, 0.25) 25%, transparent 0, transparent 75%, rgba(0, 95, 150, 0.25) 0);
+    background-position: 0 0, 20px 20px;
+    background-size: 40px 40px; }
