@@ -1,0 +1,21 @@
+.neumoContainer {
+  width: 500px;
+  height: 500px;
+  border: 1px solid grey;
+  margin: auto;
+  margin-bottom: 20px;
+  background-color: #ecf0f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .neumoButton {
+    width: 200px;
+    height: 200px;
+    background: #ecf0f3;
+    border-radius: 20px;
+    box-shadow: 18px 18px 30px #d1d9e6, -18px -18px 30px #fff;
+    &:hover {
+      box-shadow: inset 18px 18px 30px #d1d9e6, inset -18px -18px 30px #fff;
+    }
+  }
+}
