@@ -1,0 +1,25 @@
+@keyframes ants {
+  to {
+    background-position: 100%;
+  }
+}
+
+.solutionContainer {
+  width: 500px;
+  height: 500px;
+  border: 1px solid grey;
+  margin: auto;
+  margin-bottom: 20px;
+  // background-color: #ecf0f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .marchingAnts {
+    padding: 100px;
+    border: 1px solid transparent;
+    background:
+    linear-gradient(white, white) padding-box,
+    repeating-linear-gradient(-45deg, black 0, black 25%, white 0, white 50%) 0 / .6em .6em;
+    animation: ants 12s linear infinite;
+  }
+}
