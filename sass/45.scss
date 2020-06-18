@@ -1,0 +1,24 @@
+@function text-retro($color: black, $depth: 8) {
+  $shadows: (1px 1px $color,);
+  @for $i from 1 through $depth {
+    $shadows: append($shadows, ($i*1px) ($i*1px) $color, comma);
+  }
+  @return $shadows
+}
+
+.retroContainer {
+  width: 500px;
+  height: 500px;
+  border: 1px solid grey;
+  margin: auto;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 50%, 45%);
+  h1 {
+    color: white;
+    font-size: 80px;
+    text-shadow: text-retro(black, 20);
+  }
+}
