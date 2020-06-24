@@ -1,0 +1,31 @@
+.moonContainer {
+  background: #000;
+  display: flex;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  justify-content: center;
+  margin: auto; }
+  .moonContainer .moon {
+    display: flex;
+    position: relative;
+    width: 8em;
+    height: 8em;
+    background: black;
+    border-radius: 50%;
+    box-shadow: inset 0.5em -0.5em crimson;
+    animation: spin 2s linear infinite; }
+    .moonContainer .moon::before, .moonContainer .moon::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: inherit;
+      border-radius: inherit;
+      box-shadow: inherit; }
+    .moonContainer .moon::before, .moonContainer .moon::after {
+      filter: blur(10px); }
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn); } }
