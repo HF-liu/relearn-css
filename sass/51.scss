@@ -1,0 +1,79 @@
+.theaterContainer {
+  background: #242333;
+  display: flex;
+  align-items: center;
+  width: 700px;
+  height: 700px;
+  justify-content: center;
+  margin: auto;
+  font-family: 'Lato', sans-serif;
+  flex-wrap: wrap;
+  .theater {
+    width: 350px;
+  }
+  .legends {
+    width: 250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    color: #777;
+    font-size: 13px;
+    div {
+      display: flex;
+      align-items: baseline;
+    }
+    .selected {
+      .seat {
+        background-color: #6feaf6;
+      }
+    }
+    .occupied {
+      .seat {
+        background-color: #fff;
+      }
+    }
+  }
+  .seat {
+    height: 12px;
+    width: 15px;
+    margin: 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #444451;
+  }
+  .screen {
+    // display: flex;
+    // position: relative;
+    width: 200px;
+    height: 70px;
+    perspective: 100px;
+    background: #fff;
+    margin: 30px auto;
+    transform: perspective(500px) rotateX(-45deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+  }
+  .seats {
+    width: 250px;
+    margin: 10px auto;
+    .row {
+      display: flex;
+      .seat {
+        margin-right:10px;
+        &.occ {
+          transform: scale(1.05);
+          background: #fff;
+        }
+      }
+      :nth-of-type(2), :nth-of-type(6) {
+        margin-right: 30px;
+      }
+      :nth-of-type(8) {
+        margin-right: 0;
+      }
+    }
+  }
+  .break {
+    flex-basis: 100%;
+    height: 0;
+  }
+}
